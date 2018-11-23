@@ -113,8 +113,7 @@
                 commentExpr="(?x)                                               # free-spacing (see `RegEx - Pattern Modifiers`)
                                 (?s:\x2F\x2A.*?\x2A\x2F)                        # Multi Line Comment  x2F -> '/'  x2A -> '*'  
                             |   (?m-s:(?:\x23|\x2F{2}).*$)                      # Single Line Comment 1 # and 2 //
-                          #  |   (?s:\x22(?:[^\x22\x24\x5C]|\x5C.)*\x22)         # String Literal - Double Quoted
-                            |   (?s:\x22(?:[^\x22\x5C]|\x5C.)*\x22)         # String Literal - Double Quoted
+                            |   (?s:\x22(?:[^\x22\x5C]|\x5C.)*\x22)             # String Literal - Double Quoted
                             |   (?s:\x27(?:[^\x27\x5C]|\x5C.)*\x27)             # String Literal - Single Quoted
                             |   (?:                                             # Here Document
                                     \x3C{3}(?'HDID'[A-Za-z_\x7F-\xFF][\w\x7F-\xFF]*)[^\r\n]*(?:\r?\n|\n?\r)
